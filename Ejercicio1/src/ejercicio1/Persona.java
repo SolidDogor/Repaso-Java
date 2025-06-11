@@ -9,11 +9,11 @@ package ejercicio1;
  * @author Alejandro
  */
 public class Persona {
-    String nombre;
-    String apellido;
-    int DNI;
-    int numeroTelefono;
-    String direccion;
+    private String nombre;
+    private String apellido;
+    private int DNI;
+    private int numeroTelefono;
+    private String direccion;
 
     public Persona(String nombre, String apellido, int DNI, int numeroTelefono, String direccion) {
         this.nombre = nombre;
