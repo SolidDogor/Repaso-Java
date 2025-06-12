@@ -4,7 +4,6 @@
  */
 package ejercicio1;
 import java.util.Scanner;
-import ejercicio1.Persona;
 
 /**
  *
