@@ -103,4 +103,23 @@ public class ListaLibros {
             System.out.println(cantidadAutor);
         }
     }
+    
+    public void promedioAnios(){
+        int cantidadLibros = 0, anio;
+        float promedio = 0;
+        if (listaLibros.isEmpty()) {
+            System.out.println("No hay libros registrados");
+        } else {
+            for (Libro l : listaLibros) {
+                anio = l.getAnioPublicacion();
+                promedio = promedio + anio;
+                cantidadLibros++;
+            }
+        }
+        
+        promedio = promedio / cantidadLibros;
+        System.out.println("Promedio de los libros ingresados: " + promedio);
+        System.out.println("-----------------------------");
+        
+    }
 }

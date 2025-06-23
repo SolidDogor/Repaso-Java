@@ -51,6 +51,9 @@ public class Ejercicio10 {
         aut = sc.nextLine();
         listaLibros.contarAutor(aut);
         
+        System.out.println("-----------------------------");
+        System.out.println("Calculando promedio de fechas de publicaciones...");
+        listaLibros.promedioAnios();
     }
     
 }
