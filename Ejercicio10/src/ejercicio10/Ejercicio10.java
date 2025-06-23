@@ -16,21 +16,27 @@ public class Ejercicio10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        ListaLibros listaLibros = new ListaLibros();
         Scanner sc = new Scanner(System.in);
         String aut, tit;
         int anio;
         
-        System.out.println("Ingrese el titulo del libro: ");
-        tit = sc.nextLine();
-        System.out.println("Ingrese el autor del libro: ");
-        aut = sc.nextLine();
-        System.out.println("Ingrese el anio de publicacion: ");
-        anio = sc.nextInt();
-        sc.nextLine();
+        for(int i = 0; i < 3; i++){
+            System.out.println("Ingrese el titulo del libro #" + (i+1) + " : ");
+            tit = sc.nextLine();
+            System.out.println("Ingrese el autor del libro #" + (i+1) + " : ");
+            aut = sc.nextLine();
+            System.out.println("Ingrese el anio de publicacion #" + (i+1) + " : ");
+            anio = sc.nextInt();
+            sc.nextLine();
+            
+            Libro l = new Libro(tit,aut,anio);
+            listaLibros.agregarLibro(l);
+            
+        }
         
-        Libro l = new Libro(tit,aut,anio);
-        System.out.println("Mostrando datos del libro: ");
-        l.mostrarInfo();
+        System.out.println("Mostrando lista de libros");
+        listaLibros.mostrarLibros();
         
     }
     
