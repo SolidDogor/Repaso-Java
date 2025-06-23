@@ -38,6 +38,11 @@ public class Ejercicio10 {
         System.out.println("Mostrando lista de libros");
         listaLibros.mostrarLibros();
         
+        System.out.println("Ingrese titulo a buscar: ");
+        tit = sc.nextLine();
+        
+        listaLibros.buscarLibro(tit);
+        
     }
     
 }
