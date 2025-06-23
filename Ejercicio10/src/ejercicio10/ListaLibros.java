@@ -58,9 +58,28 @@ public class ListaLibros {
                 }   
             }
         }
-        
         if(!encontrado){
             System.out.println("No se encontro el libro.");
+        }
+    }
+    
+    public void filtrarPorAnio(int anioPublicacion){
+        boolean encontrado = false;
+        if (listaLibros.isEmpty()) {
+            System.out.println("No hay productos registrados");
+        } else {
+            for (Libro l : listaLibros) {
+                if(l.getAnioPublicacion() > anioPublicacion){
+                    System.out.println("-----------------------------");
+                    System.out.println("Libro encontrado!");
+                    l.mostrarInfo();
+                    System.out.println("-----------------------------");
+                    encontrado = true;
+                }
+            }
+        }
+        if(!encontrado){
+            System.out.println("No hay libros mayores a esa fecha.");
         }
     }
 }

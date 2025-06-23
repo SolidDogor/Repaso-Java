@@ -39,9 +39,13 @@ public class Ejercicio10 {
         listaLibros.mostrarLibros();
         
         System.out.println("Ingrese titulo a buscar: ");
-        tit = sc.nextLine();
-        
+        tit = sc.nextLine();        
         listaLibros.buscarLibro(tit);
+        
+        System.out.println("Ingrese fecha de publicacion a buscar: ");
+        anio = sc.nextInt();
+        sc.nextLine();
+        listaLibros.filtrarPorAnio(anio);
         
     }
     
