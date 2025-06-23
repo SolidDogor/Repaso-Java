@@ -82,4 +82,25 @@ public class ListaLibros {
             System.out.println("No hay libros mayores a esa fecha.");
         }
     }
+    
+    public void contarAutor(String autor){
+        boolean encontrado = false;
+        int cantidadAutor = 0;
+        if (listaLibros.isEmpty()) {
+            System.out.println("No hay libros registrados");
+        } else {
+            for (Libro l : listaLibros) {
+                if(l.getAutor().equals(autor)){
+                    cantidadAutor++;
+                    encontrado = true;
+                }
+            }
+        }
+        if(!encontrado){
+            System.out.println("No hay libros de ese autor.");
+        } else {
+            System.out.println("Cantidad de libros de " + autor + ": ");
+            System.out.println(cantidadAutor);
+        }
+    }
 }

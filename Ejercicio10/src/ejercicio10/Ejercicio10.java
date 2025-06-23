@@ -47,6 +47,10 @@ public class Ejercicio10 {
         sc.nextLine();
         listaLibros.filtrarPorAnio(anio);
         
+        System.out.println("Ingrese autor para contar su cantidad de libros: ");
+        aut = sc.nextLine();
+        listaLibros.contarAutor(aut);
+        
     }
     
 }
