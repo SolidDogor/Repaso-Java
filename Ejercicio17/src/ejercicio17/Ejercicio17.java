@@ -5,7 +5,6 @@
 package ejercicio17;
 
 import java.util.Scanner;
-import java.util.StringTokenizer;
 
 /**
  *
